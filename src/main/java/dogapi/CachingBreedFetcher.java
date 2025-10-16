@@ -34,7 +34,7 @@ public class CachingBreedFetcher implements BreedFetcher {
             cache.put(breed, new ArrayList<>(subBreeds));
             return new ArrayList<>(subBreeds);
         } catch (BreedNotFoundException e) {
-            throw e;
+            throw e;// throw unnormal information
         }
     }
 

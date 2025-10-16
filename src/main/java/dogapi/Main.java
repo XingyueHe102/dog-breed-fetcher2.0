@@ -27,10 +27,8 @@ public class Main {
         try {
             List<String> subBreeds;
             subBreeds = breedFetcher.getSubBreeds(breed);
-            // 返回列表大小，若为空则返回0
             return subBreeds.size();
         } catch (BreedFetcher.BreedNotFoundException e) {
-            // 当品种不存在时，返回0
             return 0;
         }
     }
